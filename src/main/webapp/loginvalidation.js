@@ -1,10 +1,10 @@
 function loginval()
 {
     
-    var username=document.getElementById("usrname");
-    var userpassword=document.getElementById("usrpass");
+    var username=document.getElementById("lusrname");
+    var userpassword=document.getElementById("lusrpass");
 
-    var sp=document.getElementsByClassName("erbox");
+    var sp=document.getElementsByClassName("lerbox");
     //username
 
     if(username.value==""){

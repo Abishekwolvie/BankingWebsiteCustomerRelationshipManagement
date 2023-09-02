@@ -55,10 +55,12 @@ function loginval()
 
 //confim password and password check
 
-    if(userpassword!=cnfuserpassword){
+    if(userpassword.value!=cnfuserpassword.value)
+    {
         sp[3].innerHTML="Password and confirm password should match";
+        console.log(userpassword.value);
+        console.log(cnfuserpassword.value);
         return false;
-
     }
     else
     {
