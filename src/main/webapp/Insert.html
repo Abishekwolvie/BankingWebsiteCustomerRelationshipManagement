@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+    <style>
+        #maindiv{
+
+            width: 100%;
+            height: auto;
+            background-color: white;
+        }
+        #logoandname{
+            height: 200px;
+           
+            position: relative;
+
+        }
+        #logoandname img{
+            width: 100px;
+            height: 100px;
+            margin-top: 10px;
+        }
+        #logoandname img,p{
+            display: inline-block;
+            line-height: 50px;
+        }
+        #logoandname p{
+
+            margin-left: 600px;
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+    
+        }
+        #navbar{
+
+            width: 100%;
+            height: 80px;
+            background-color: blueviolet;
+            border-radius: 3px;
+        }
+        #navbar a{
+
+            line-height: 80px;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            margin-left: 50px;
+            margin-right: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #insertform{
+
+            background-color: bisque;
+            width: 100%;
+            height: 800px;
+        }
+
+        #insertform p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50px;
+
+
+        }
+        th{
+            font-size: 30px;
+            font-weight: lighter;
+            
+        }
+        th input,select{
+
+            height: 25px;
+            width: 200px;
+            
+        }
+        input[type="submit"]{
+
+            width: 100px;
+
+        }
+        .cserbox{
+
+            color: red;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <div id="maindiv">
+        <nav id="logoandname">
+            <img src="banklogo.png" alt="">
+        
+            <p>Banking Website</p>
+            
+          
+            
+        </nav>
+        <nav id="navbar">
+            <center>
+                <a href="Welcome.html">Home</a>
+                <a href="">View</a>
+                <a href="">Update</a>
+                <a href="">Delete</a>
+                <a href="Login.html">Logout</a>
+            </center>
+        </nav>
+        <div id="insertform">
+            <center>
+                <p>Insert the customer details here</p>
+            </center>
+            <center>
+                <form action=""  onsubmit="return customerregvalidation()">
+                    <table width="30%" >
+                        <tr>
+                            <th>Enter customer email</th>
+                            <th><input type="email" name="cemail" id="cusemail" placeholder="email"></th>
+                        </tr>
+                        <tr>
+                            <th colspan="2" style="height: 10px;"><span class="cserbox"></span></th>
+                        </tr>
+                        <tr>
+                            <th>Enter customer name</th>
+                            <th><input type="text" name="cname" id="cusname" placeholder="Customer name"></th>
+                        </tr>
+                        <tr>
+                            <th colspan="2" style="height: 10px;"><span class="cserbox"></span></th>
+                        </tr>
+                        <tr>
+                            <th>Account Type</th>
+                            <th>
+                                <select name="actype" id="cusactype">
+                                    <option >--select--</option>
+                                    <option >Savings Account</option>
+                                    <option >Current Account</option>
+                                </select>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th colspan="2" style="height: 10px;"><span class="cserbox"></span></th>
+                        </tr>
+                        <tr>
+                            <th>Account Balance</th>
+                            <th><input type="number" id="cusaccountbalance" name="acbalance" placeholder="Account Balance"></th>
+                        </tr>
+                        <tr>
+                            <th colspan="2" style="height: 10px;"><span class="cserbox"></span></th>
+                        </tr>
+                        <tr>
+                            <th>Mobile Number</th>
+                            <th><input type="text" id="cusmobno" name="mobno" placeholder="Mobile No" ></th>
+                        </tr>
+                        <tr>
+                            <th colspan="2" style="height: 10px;"><span class="cserbox"></span></th>
+                        </tr>
+                        <tr>
+                            <th>Date of Birth</th>
+                            <th><input type="date" id="cusdob" name="dob" ></th>
+                        </tr>
+                        <tr>
+                            <th colspan="2" style="height: 10px;"><span class="cserbox"></span></th>
+                        </tr>
+                        <tr>
+                            <th colspan="2"><input type="submit"></th>
+                        </tr>
+                    </table>
+                </form>
+    
+
+            </center>
+
+
+        </div>
+    </div>
+    <script src="insertvalidation.js"></script>
+
+</body>
+</html>

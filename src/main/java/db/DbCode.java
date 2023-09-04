@@ -24,11 +24,9 @@ public class DbCode {
 			if(username.equals(rs.getString("username")) && password.equals(rs.getString("password")))
 			{
 				b=true;
+				break;
 			}
-			else
-			{
-				b=false;
-			}
+
 		}
 		return b;
 	}
