@@ -44,5 +44,22 @@ public class DbCode {
 		return res;
 		
 	}
+	
+	public int insert(String customername,String accounttype,long balance,long mobileno,String dob,String emailid) throws SQLException
+	{
+		int insres=0;
+		
+		PreparedStatement ps=con.prepareStatement("insert into accountinfo(customername,actype,balance,mobno,dob,emailid) values(?,?,?,?,?,?)");
+		ps.setString(1, customername);
+		ps.setString(2, accounttype);
+		ps.setLong(3, balance);
+		ps.setLong(4, mobileno);
+		ps.setString(5, dob);
+		ps.setString(6, emailid);
+		insres=ps.executeUpdate();
+		return insres;
+	}
+	
+
 
 }

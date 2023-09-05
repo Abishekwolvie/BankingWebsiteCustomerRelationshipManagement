@@ -16,7 +16,7 @@ int res=d.reg(email, username, password);
 
 if(res>0)
 {
-	out.print("<h1>Inserted Successfully");
+	out.print("<h1>Inserted Successfully</h1>");
 %>
 <a href="Login.html">Click here to login</a>
 <%
