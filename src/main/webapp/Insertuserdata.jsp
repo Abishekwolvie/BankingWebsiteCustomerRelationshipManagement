@@ -28,7 +28,6 @@ if(result>0)
 else
 {
 
-
 %>
 <h1>Failed</h1>
 <jsp:include page="Insert.html"></jsp:include>

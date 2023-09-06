@@ -1,6 +1,8 @@
 package db;
 
 import java.sql.*;
+import java.util.*;
+
 
 public class DbCode {
 	
@@ -59,6 +61,23 @@ public class DbCode {
 		insres=ps.executeUpdate();
 		return insres;
 	}
+	
+	public ArrayList<Customer> view() throws SQLException //returns arraylist of customer viwe all customer data
+	{
+		ArrayList<Customer> cdata=new ArrayList<Customer>();
+		
+		Statement s=con.createStatement();
+		ResultSet rs=s.executeQuery("select *from accountinfo");
+		while(rs.next())
+		{
+			Customer c=new Customer(rs.getLong("acno"),rs.getString("customername"),rs.getString("actype"),
+					rs.getLong("balance"),rs.getLong("mobno"),rs.getString("Dob"),rs.getString("emailid"));
+			cdata.add(c);
+		}
+		
+		return cdata;
+	}
+	
 	
 
 
