@@ -89,6 +89,15 @@ public class DbCode {
 		return ures;
 	}
 	
+	public int delete(long accountnumber) throws SQLException
+	{
+		int delres=0;
+		PreparedStatement p=con.prepareStatement("delete from accountinfo where acno=?");
+		p.setLong(1, accountnumber);
+		delres=p.executeUpdate();
+		return delres;
+	}
+	
 	
 
 

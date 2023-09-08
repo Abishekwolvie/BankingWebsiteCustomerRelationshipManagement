@@ -50,7 +50,22 @@
             margin-right: 50px;
             font-family: Arial, Helvetica, sans-serif;
         }
+        #deleteform{
 
+            background-color: bisque;
+            height: 800px;
+
+        }
+
+        #deleteform span{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        #deleteform input{
+
+            width: 300px;
+            height: 30px;
+        }
 
         
     </style>
@@ -71,10 +86,24 @@
                 <a href="Insert.html">Insert</a>
                 <a href="View.jsp">View</a>
                 <a href="Update.html">Update</a>
-                <a href="Delete.html">Delete</a>
                 <a href="Login.html">Logout</a>
             </center>
         </nav>
+        <div id="deleteform">
+            <span>Enter the account number to delete</span>
+            <br>
+            <br>
+            <form action="Delete.jsp">
+                <input type="number" name="delacno" placeholder="Account Number" required>
+                <br>
+                <br>
+                <br>
+                <input type="submit" value="Delete">
+            </form>
+
+
+
+        </div>
     </div>
 
 </body>

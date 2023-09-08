@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Bank Website</title>
     <style>
         #maindiv{
 
@@ -105,7 +105,7 @@
                 <a href="Welcome.html">Home</a>
                 <a href="Insert.html">Insert</a>
                 <a href="Update.html">Update</a>
-                <a href="">Delete</a>
+                <a href="Delete.html">Delete</a>
                 <a href="Login.html">Logout</a>
             </div>
         </nav>

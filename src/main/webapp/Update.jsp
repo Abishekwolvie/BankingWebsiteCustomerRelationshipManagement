@@ -8,6 +8,7 @@
 </head>
 <body>
 <jsp:useBean id="d" class="db.DbCode"></jsp:useBean>
+<%@ page errorPage="Error.jsp" %>
 <%
 long upaccountno=Long.parseLong(request.getParameter("upcacno"));
 String updateemail=request.getParameter("upccemail");

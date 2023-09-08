@@ -21,8 +21,8 @@ if(result>0)
 {
 	
 %>
-<h1>Inserted Successfully</h1> // check why msg is not shown
-<jsp:forward page="Welcome.html"></jsp:forward>
+<h1>Inserted Successfully</h1> 
+<jsp:include page="Insert.html"></jsp:include>
 <%
 }
 else
