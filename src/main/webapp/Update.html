@@ -50,14 +50,14 @@
             margin-right: 50px;
             font-family: Arial, Helvetica, sans-serif;
         }
-        #insertform{
+        #updateform{
 
             background-color: bisque;
             width: 100%;
             height: 800px;
         }
 
-        #insertform p{
+        #updateform p{
             font-family: Arial, Helvetica, sans-serif;
             font-size: 50px;
 
@@ -79,9 +79,13 @@
             width: 100px;
 
         }
-        .cserbox{
+        .uperbox{
 
             color: red;
+        }
+        #updatetable{
+
+            margin-left: 500px;
         }
 
 
@@ -102,65 +106,35 @@
             <center>
                 <a href="Welcome.html">Home</a>
                 <a href="View.jsp">View</a>
-                <a href="Update.html">Update</a>
                 <a href="">Delete</a>
                 <a href="Login.html">Logout</a>
             </center>
         </nav>
-        <div id="insertform">
-            <center>
+        <div id="updateform">
+            <div id="updatetable">
                 <p>Insert the customer details here</p>
-            </center>
-            <center>
-                <form action="Insertuserdata.jsp"  onsubmit="return customerregvalidation()" method="post">
+                <form action="Update.jsp"  onsubmit="return updateval()">
                     <table width="30%" >
                         <tr>
                             <th>Enter customer email</th>
-                            <th><input type="email" name="cemail" id="cusemail" placeholder="email"></th>
+                            <th><input type="email" name="upccemail" id="upcusemail" placeholder="email"></th>
                         </tr>
                         <tr>
-                            <th colspan="2" style="height: 10px;"><span class="cserbox"></span></th>
+                            <th colspan="2" style="height: 10px;"><span class="uperbox"></span></th>
                         </tr>
                         <tr>
-                            <th>Enter customer name</th>
-                            <th><input type="text" name="cname" id="cusname" placeholder="Customer name"></th>
+                            <th>Enter customer Account Number</th>
+                            <th><input type="number" name="upcacno" id="upcusacno" placeholder="Account Number"></th>
                         </tr>
                         <tr>
-                            <th colspan="2" style="height: 10px;"><span class="cserbox"></span></th>
-                        </tr>
-                        <tr>
-                            <th>Account Type</th>
-                            <th>
-                                <select name="actype" id="cusactype">
-                                    <option >--select--</option>
-                                    <option >Savings Account</option>
-                                    <option >Current Account</option>
-                                </select>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th colspan="2" style="height: 10px;"><span class="cserbox"></span></th>
-                        </tr>
-                        <tr>
-                            <th>Account Balance</th>
-                            <th><input type="number" id="cusaccountbalance" name="acbalance" placeholder="Account Balance"></th>
-                        </tr>
-                        <tr>
-                            <th colspan="2" style="height: 10px;"><span class="cserbox"></span></th>
+                            <th colspan="2" style="height: 10px;"><span class="uperbox"></span></th>
                         </tr>
                         <tr>
                             <th>Mobile Number</th>
-                            <th><input type="text" id="cusmobno" name="mobno" placeholder="Mobile No" ></th>
+                            <th><input type="text" id="upcusmobno" name="upcmobno" placeholder="Mobile No" ></th>
                         </tr>
                         <tr>
-                            <th colspan="2" style="height: 10px;"><span class="cserbox"></span></th>
-                        </tr>
-                        <tr>
-                            <th>Date of Birth</th>
-                            <th><input type="date" id="cusdob" name="dob" ></th>
-                        </tr>
-                        <tr>
-                            <th colspan="2" style="height: 10px;"><span class="cserbox"></span></th>
+                            <th colspan="2" style="height: 10px;"><span class="uperbox"></span></th>
                         </tr>
                         <tr>
                             <th colspan="2"><input type="submit"></th>
@@ -169,12 +143,12 @@
                 </form>
     
 
-            </center>
+            </div>
 
 
         </div>
     </div>
-    <script src="insertvalidation.js"></script>
+    <script src="updatevalidation.js"></script>
 
 </body>
 </html>

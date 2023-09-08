@@ -104,7 +104,7 @@
             <div class="navigationLinks">
                 <a href="Welcome.html">Home</a>
                 <a href="Insert.html">Insert</a>
-                <a href="">Update</a>
+                <a href="Update.html">Update</a>
                 <a href="">Delete</a>
                 <a href="Login.html">Logout</a>
             </div>

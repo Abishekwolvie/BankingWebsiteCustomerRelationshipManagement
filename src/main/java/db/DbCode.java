@@ -78,6 +78,17 @@ public class DbCode {
 		return cdata;
 	}
 	
+	public int update(long accountnumber,String email,long mobileno) throws SQLException
+	{
+		int ures=0;
+		PreparedStatement ps=con.prepareStatement("update accountinfo set emailid=?,mobno=? where acno=?");
+		ps.setString(1, email);
+		ps.setLong(2, mobileno);
+		ps.setLong(3, accountnumber);
+		ures=ps.executeUpdate();
+		return ures;
+	}
+	
 	
 
 
